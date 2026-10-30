@@ -125,3 +125,32 @@ console.log(`The ${meal} costs ksh ${price}.`)
 console.log("5" + 2)
 console.log("5" - 2)
 console.log("2" / 2)
+
+
+// Functions
+
+// methods eg console.log()
+
+// ================================
+let aOne = 3
+let bOne = 4
+
+function add(){
+    return aOne + bOne
+}
+
+console.log(add())
+
+
+// =================================
+function addTwo(aTwo, bTwo){
+    return aTwo + bTwo
+}
+
+console.log(addTwo(34,45))
+console.log(addTwo(324,45))
+console.log(addTwo(34,4675))
+console.log(addTwo(3423,45))
+console.log(addTwo(134,45))
+console.log(addTwo(34,4345))
+console.log(addTwo(134,450))
