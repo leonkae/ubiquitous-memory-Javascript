@@ -1,36 +1,36 @@
-console.log("Hello world")
+console.log("Hello world");
 
-let product = "Burger"
-let price = 850
+let product = "Burger";
+let price = 850;
 
-console.log(product)
-console.log(price)
-console.log("Product : " , product, "Price : ", price )
+console.log(product);
+console.log(price);
+console.log("Product : ", product, "Price : ", price);
 // a string operation called string interpolation
-console.log(`You bought a ${product} and the price is ${price}`)
+console.log(`You bought a ${product} and the price is ${price}`);
 
-// Variable declarators are 
+// Variable declarators are
 // const , var , let
 
-let number = 123
-let string = "abcdefg"
-let character = "a"
-let array = ["collection", 123 , true]
-let boolean = true
-let boolean_2 = false
-let address = null
+let number = 123;
+let string = "abcdefg";
+let character = "a";
+let array = ["collection", 123, true];
+let boolean = true;
+let boolean_2 = false;
+let address = null;
 
 // console methods
-console.log("prints logs on the terminal and the console")
-console.error("print error on the terminal and console")
-console.warn("Check your input (warning)")
+console.log("prints logs on the terminal and the console");
+console.error("print error on the terminal and console");
+console.warn("Check your input (warning)");
 console.table([
-    {name : "Fidel", status : "absent" , apologies : "none"},
-    {name : "Mark", status : "present", apologies : 1},
-    {name : "Richard", status : "present", apologies : null},
-])
+  { name: "Fidel", status: "absent", apologies: "none" },
+  { name: "Mark", status: "present", apologies: 1 },
+  { name: "Richard", status: "present", apologies: null },
+]);
 
-// Arithmetic operators: 
+// Arithmetic operators:
 
 //  + addition
 //  - subtraction
@@ -39,15 +39,15 @@ console.table([
 //  % modulus
 //  ** Exponentiation
 
-const mealPrice = 800
-const quantity = 3
-const deliveryFee = 150
+const mealPrice = 800;
+const quantity = 3;
+const deliveryFee = 150;
 
-const subtotal = mealPrice * quantity
-const total = subtotal + deliveryFee
+const subtotal = mealPrice * quantity;
+const total = subtotal + deliveryFee;
 
-console.log("subtotal: " , subtotal)
-console.log("Total: ",  total)
+console.log("subtotal: ", subtotal);
+console.log("Total: ", total);
 
 // Assignment operators
 //  = assignment
@@ -58,20 +58,20 @@ console.log("Total: ",  total)
 //  %= modulus assignment
 //  **= exponentiation assignment
 
-let myMath = 100
-console.log(`myMath original ${myMath}`)
-myMath += 50
-console.log(`myMath + 50 : ${myMath} `)
-myMath -= 83
-console.log(`my math - 83 : ${myMath}`)
-myMath *= 830
-console.log(`my math * 830 : ${myMath}`)
-myMath /= 83
-console.log(`my math / 83 : ${myMath}`)
-myMath %= 83
-console.log(`my math % 83 : ${myMath}`)
-myMath **= 45
-console.log(`my math ** 45 : ${myMath}`)
+let myMath = 100;
+console.log(`myMath original ${myMath}`);
+myMath += 50;
+console.log(`myMath + 50 : ${myMath} `);
+myMath -= 83;
+console.log(`my math - 83 : ${myMath}`);
+myMath *= 830;
+console.log(`my math * 830 : ${myMath}`);
+myMath /= 83;
+console.log(`my math / 83 : ${myMath}`);
+myMath %= 83;
+console.log(`my math % 83 : ${myMath}`);
+myMath **= 45;
+console.log(`my math ** 45 : ${myMath}`);
 
 // Comparison operators
 //  == equal to
@@ -83,74 +83,158 @@ console.log(`my math ** 45 : ${myMath}`)
 //  >= greater than or equal to
 //  <= less than or equal to
 
+let num = 10;
+let numTwo = "10";
+console.log(num === numTwo);
 
-let num = 10
-let numTwo = "10"
-console.log(num === numTwo)
-
-let ex = 2
-let exTwo = 4
-console.log(ex > exTwo)
+let ex = 2;
+let exTwo = 4;
+console.log(ex > exTwo);
 
 // Logical or boolean operators
 //  && logical and
 //  || logical or
 //  ! logical not
 
-const isLoggedIn = false
-const hasPaid = false
+const isLoggedIn = false;
+const hasPaid = false;
 
-if(isLoggedIn && hasPaid){
-    console.log("Good stuff")
+if (isLoggedIn && hasPaid) {
+  console.log("Good stuff");
 }
 
 // String operators
 
-// Concatatenation 
-// + operator to join two strings => Concatatenation 
+// Concatatenation
+// + operator to join two strings => Concatatenation
 
-let firstName = "Andre"
-let lastName = "Kaeulana"
+let firstName = "Andre";
+let lastName = "Kaeulana";
 
-const fullName = firstName + " " + lastName
-console.log(fullName)
+const fullName = firstName + " " + lastName;
+console.log(fullName);
 
 // Next string operation is interpolation
 
-const meal = "Burger"
-const BPrice = 650
+const meal = "Burger";
+const BPrice = 650;
 
-console.log(`The ${meal} costs ksh ${price}.`)
+console.log(`The ${meal} costs ksh ${price}.`);
 
-console.log("5" + 2)
-console.log("5" - 2)
-console.log("2" / 2)
-
+console.log("5" + 2);
+console.log("5" - 2);
+console.log("2" / 2);
 
 // Functions
 
 // methods eg console.log()
 
 // ================================
-let aOne = 3
-let bOne = 4
+let aOne = 3;
+let bOne = 4;
 
-function add(){
-    return aOne + bOne
+function add() {
+  return aOne + bOne;
 }
 
-console.log(add())
-
+console.log(add());
 
 // =================================
-function addTwo(aTwo, bTwo){
-    return aTwo + bTwo
+function addTwo(aTwo, bTwo) {
+  return aTwo + bTwo;
 }
 
-console.log(addTwo(34,45))
-console.log(addTwo(324,45))
-console.log(addTwo(34,4675))
-console.log(addTwo(3423,45))
-console.log(addTwo(134,45))
-console.log(addTwo(34,4345))
-console.log(addTwo(134,450))
+console.log(addTwo(34, 45));
+console.log(addTwo(324, 45));
+console.log(addTwo(34, 4675));
+console.log(addTwo(3423, 45));
+console.log(addTwo(134, 45));
+console.log(addTwo(34, 4345));
+console.log(addTwo(134, 450));
+
+// let pilotBadge = false
+
+// // if(pilotBadge === true){
+// //     console.log("Access granted")
+// // } else {
+// //     console.log(" State ? State property ? Nuhhh... hit the road dude")
+// // }
+
+// if(pilotBadge === true){
+//     console.log("Access granted")
+// } else if (pilotLicense === true) {
+//     console.log(" State ? State property ? Nuhhh... hit the road dude")
+// }
+
+let pilotBadge = false;
+let pilotLicense = true;
+
+function checkPilotAccess(pilotBadge, pilotLicense) {
+  if (pilotBadge === true) {
+    console.log("Access granted");
+  } else if (pilotLicense === true) {
+    console.log("pilot license seen");
+  } else {
+    console.log("Access denied , no badge no license");
+  }
+}
+
+checkPilotAccess(pilotBadge, pilotLicense);
+
+const orderStatus = "preparing";
+
+switch (orderStatus) {
+  case "pending":
+    console.log("Waiting for confirmation");
+    break;
+
+  case "preparing":
+    console.log("Kitchen preping");
+    break;
+
+  case "delivered":
+    console.log("meal arrived");
+    break;
+
+  default:
+    console.log("unknown order status");
+}
+
+
+let count = 1
+
+while(count <= 5){
+    console.log(count)
+    count++
+}
+
+let n = 1
+
+do {
+    console.log(n)
+    n++
+} while (n <= 10)
+
+
+for(let i = 1; i <= 5 ; i++){
+    console.log(i)
+}
+
+const student = {
+    name : "Ejaz",
+    age : 45,
+    course : "Ai development"
+}
+
+// for in 
+for (const key in student){
+    console.log(key, student[key])
+}
+
+const meals = ["gima", "meat", "fish"]
+
+// for of
+
+for (const meal of meals){
+    console.log(meal)
+}
