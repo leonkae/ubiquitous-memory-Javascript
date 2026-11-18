@@ -238,3 +238,99 @@ const meals = ["gima", "meat", "fish"]
 for (const meal of meals){
     console.log(meal)
 }
+
+for (let x = 1; x <= 10; x++){
+  if(x === 5){
+    break
+  }
+  console.log(x)
+}
+
+// Array
+
+const students = ["agem", "richard", "ejaz", "alphonce", "jenifer"]
+
+console.log(students)
+console.log(students[0])
+console.log(students[1])
+console.log(students.length)
+
+students.push("mark")
+
+console.log(students)
+
+students.unshift("braxton")
+
+console.log(students)
+
+students.pop()
+
+console.log(students)
+
+students.shift()
+
+console.log(students)
+
+students.forEach((students, index) => {
+  console.log(`${index + 1}. ${students}`)
+})
+
+// objects
+
+const person = {
+  name : "Agem",
+  age : 26,
+  occupation : "pilot",
+  height : 5.11,
+  date_of_birth : "1st Nov 2000",
+  greet(){
+    return `my name is ${this.name} and i am a ${this.occupation}`
+  }
+}
+
+console.log(person)
+console.log(person.greet())
+// dot notation
+console.log(person.name)
+console.log(person.age)
+// bracket notation
+console.log(person["occupation"])
+
+person.special_needs = false
+
+console.log(person)
+
+person.occupation = "pilot in command"
+
+console.log(person)
+
+delete person.date_of_birth
+console.log(person)
+
+// put everything together
+
+const cart = [
+  {name : "Burger", price: 850},
+  {name : "Milk shake", price: 550},
+  {name : "Wings", price: 1100},
+]
+
+function calculateOrderTotal(order, quantity){
+  if (quantity <= 0){
+    return 0
+  }
+
+  return order.price * quantity
+}
+
+for (const order of cart ){
+  console.log (`${order.name} : Ksh ${order.price}`)
+}
+
+const selectedItem = cart[0]
+const nQuantity = 2;
+
+const nTotal = calculateOrderTotal(selectedItem, nQuantity)
+
+console.log(`Your total is Ksh ${nTotal}`)
+
